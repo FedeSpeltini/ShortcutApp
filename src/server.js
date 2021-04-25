@@ -8,7 +8,9 @@ mongoose.connect('mongodb://localhost/shortUrls', {
   useNewUrlParser: true, useUnifiedTopology: true
 })
 
+app.set('views', './src/views');
 app.set('view engine', 'ejs')
+app.set('views', __dirname + '/views');
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/', async (req, res) => {
