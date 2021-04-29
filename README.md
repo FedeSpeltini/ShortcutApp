@@ -20,6 +20,10 @@ El funcionamiento de la misma es bastante práctico. En parte porque no tuve muc
 
 Estoy usando Express, es de los más usados en el mercado. Cualquier persona que trabaje con Node conoce dicho Framework.
 
+## Compilador
+
+Estoy usando Nodemon, que me permite realizar cambios mientras estoy corriendo la aplicación. Personalmente encuentro esta herramienta muy útil
+
 ## Interfaz
 
 -¿Una interfaz web en un proyecto BackEnd? Estas despedido
@@ -56,13 +60,18 @@ Podría haber hecho todo sin ellas (solo tengo 3 url), pero que algo sea simple 
 En primer instancia iba a ser el pasamanos entre las rutas y una capa de servicios, pero no me dió el tiempo para crear la capa de servicios.
 Así que la lógica esta en controladores.
 
+## Ejecución
+- npm install
+- npm run devStart
+
 
 ## Bibliografía
 
 - [EJS](https://ejs.co/)
 - [Mongoose](https://mongoosejs.com/docs/)
 - [Express](http://expressjs.com/)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 
 
-Juan, estuvo muy bueno el challange. Me divertí haciendoló, y te quiero agradecer por ello
+Juan, estuvo muy bueno el challange. Me divertí haciendolo, y te quiero agradecer por ello
 
