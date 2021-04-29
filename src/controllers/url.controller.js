@@ -1,10 +1,4 @@
-const urlService = require('../services/url.service');
-const express = require('express');
-const app = express();
 const ShortUrl = require('../models/shortUrl');
-
-app.set('views', '../views');
-app.set('view engine', 'ejs');
 
 const getAll =async function(req, res){
     const shortUrls = await ShortUrl.find()
@@ -12,10 +6,10 @@ const getAll =async function(req, res){
 }
 
 const shortUrl =async function(req, res){
+    console.log(req);
     await ShortUrl.create({ full: req.body.fullUrl })
     res.redirect('/');
 }
-
 
 const obtainFullUrl =async function(req, res){
     const shortUrl = await ShortUrl.findOne({ short: req.params.shortUrl })
@@ -26,8 +20,6 @@ const obtainFullUrl =async function(req, res){
   
     res.redirect(shortUrl.full)
 }
-
-
 
 module.exports = {
     getAll,
