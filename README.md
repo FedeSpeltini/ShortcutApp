@@ -26,7 +26,7 @@ Estoy usando Nodemon, que me permite realizar cambios mientras estoy corriendo l
 
 ## Interfaz
 
--¿Una interfaz web en un proyecto BackEnd? Estas despedido 
+-¿Una interfaz web en un proyecto BackEnd? Estas despedido.  
 -Para despedirme primero tiene que contratarme <3
 
 Si bien el reto especificaba que no necesito una interfaz gráfica, pienso que un proyecto no puede no tener una interfaz para que el cliente vea lo que hicimos
